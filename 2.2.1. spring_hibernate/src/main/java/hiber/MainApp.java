@@ -20,7 +20,6 @@ public class MainApp {
 
       Car car2 = new Car("Honda", 456);
       User user2 = new User("Jane", "Smith", "jane.smith@example.com", car2);
-
       Car car3 = new Car("Mistubishi", 789);
       User user3 = new User("Kyle", "Sherlock", "kyle.sherlock@example.com", car3);
 
