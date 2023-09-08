@@ -4,7 +4,6 @@ import hiber.config.AppConfig;
 import hiber.model.Car;
 import hiber.model.User;
 import hiber.service.UserService;
-import org.hibernate.Hibernate;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.sql.SQLException;
@@ -28,7 +27,7 @@ public class MainApp {
         userService.add(user2);
         userService.add(user3);
 
-        User userFound = userService.getUsersByCarModelAndSeries("Toyota", 123);
+        User userFound = userService.getUsersByCar("Toyota", 123);
         System.out.println(userFound);
 
         List<User> allUsers = userService.listUsers();
